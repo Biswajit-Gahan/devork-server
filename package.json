@@ -1,0 +1,28 @@
+{
+  "name": "devork-server",
+  "version": "1.0.0",
+  "description": "a perfect workspace for developers.",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "set NODE_ENV=development & nodemon src/server.ts",
+    "build": "node clean-dist-dir.js & tsc",
+    "start": "node dist/server.js"
+  },
+  "author": "biswajit gahan",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.0",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
